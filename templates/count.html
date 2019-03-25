@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Counted</h1>
+</head>
+<body>
+<a href={% url 'home'%}>back to homepage</a>
+
+<h4>Your text</h4>
+{{fulltext}}<br>
+<h4>Word Count</h4>
+Total Words : {{words}}
+<br>
+{%for word,value in worddicts%}
+{{ word }} = {{ value }}
+<br>
+{%endfor %}
+</body>
+</html>
